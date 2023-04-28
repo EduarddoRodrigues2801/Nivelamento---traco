@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer05</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 05</h2>
+            <p>Fazer um programa para ler o valor "r" do raio de um círculo, e depois
+                mostrar o valor da área do círculo com três casas decimais. A fórmula da
+                área do círculo é a seguinte: área = π. r². O valor de π corresponde a 3.14159.</p>
+                <form action="#"  name="frmexer05" id="frmexer05" method="post">
+                    <label>
+                        <span>Digite o valor do raio:</span>
+                        <input type="text" id="raio" name="raio" onchange="decimaisraio()"  size="13"   placeholder="digite o valor do raio">
+                    </label>
+                 
+                
+                   
+                    <input type="button" onclick="exer05()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer04</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 04</h2>
+            <p>Fazer um programa para calcular o troco no processo de pagamento de
+                um produto de uma mercearia. O programa deve ler o preço unitário do
+                produto, a quantidade de unidades compradas deste produto, e o valor em
+                dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu
+                programa deve mostrar o valor do troco a ser devolvido ao cliente.</p>
+                <form action="#"  name="frmexer04" id="frmexer04" method="post">
+                    <label>
+                        <span>Preço Uni:</span>
+                        <input type="text" id="precounit" name="precounit" onchange="decimaispreco()"  size="13"   placeholder="digite o preço unitário">
+                    </label>
+                    <label>
+                        <span>Quantidade:</span>
+                        <input type="text" id="qtde" name="qtde"   size="13" placeholder="digite a quantidade">
+                    </label>
+                    <label>
+                        <span>Ralor recebido:</span>
+                        <input type="text" id="valorrecebido" name="valorecebido" onchange="decimaisvalor()"  size="13"   placeholder="valor recebido">
+                    </label>
+                
+                   
+                    <input type="button" onclick="exer04()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

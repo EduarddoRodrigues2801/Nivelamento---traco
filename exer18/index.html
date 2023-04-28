@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer18</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 18</h2>
+            <p>Deseja-se converter uma medida de temperatura da escala Celsius para
+                Fahrenheit ou vice-versa. Para isso, você deve construir um programa que
+                leia a letra "C" ou "F" indicando em qual escala vai ser informada uma
+                temperatura. Em seguida, o programa deve mostrar a temperatura na
+                outra escala com duas casas decimais. Você deve pesquisar as fórmulas
+                para conversão de Fahrenheit->Celsius e de Celsius->Fahrenheit.</p>
+                <form action="#"  name="18" id="frmexer18" method="post">
+                    <label>
+                        <span>Digite a escala :</span>
+                        <input type="text" id="escala" name="escala"  size="13"  placeholder="Digite a Escala">
+                    </label>
+                    <label>
+                        <span>Digite a Temperatura :</span>
+                        <input type="text" id="temperatura" name="temperatura" onchange="decimaistemperatura()"  size="13"  placeholder="digite a Temperatura">
+                    </label>
+                   
+                    <input type="button" onclick="exer18()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

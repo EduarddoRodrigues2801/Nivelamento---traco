@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer06</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 06</h2>
+            <p>Fazer um programa para ler o nome de um(a) funcionário(a), o valor que
+                ele(a) recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao
+                final, mostrar o valor do pagamento do funcionário com uma mensagem
+                explicativa</p>
+                <form action="#"  name="frmexer06" id="frmexer06" method="post">
+                    <label>
+                        <span>Nome:</span>
+                        <input type="text" id="nome" name="nome"   size="13"   placeholder="Nome do funcionário">
+                    </label>
+                    <label>
+                        <span>Valor por Hora</span>:</span>
+                        <input type="text" id="valor" name="valor" onchange="decimaisvalor()"  size="13"   placeholder="valor hora">
+                    </label>
+                    <label>
+                        <span>Horas Trabalhadas</span>:</span>
+                        <input type="text" id="horas" name="horas"   size="13"   placeholder="Horas trabalhadas">
+                    </label>
+                   
+                    <input type="button" onclick="exer06()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

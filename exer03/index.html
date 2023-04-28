@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer03</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 03</h2>
+            <p>Fazer um programa para ler o nome e idade de duas pessoas. Ao final
+                mostrar uma mensagem com os nomes e a idade média entre essas
+                pessoas, com uma casa decimal.</p>
+                <form action="#"  name="frmexer03" id="frmexer03" method="post">
+                <label>
+                    <span>Nome1:</span>
+                    <input type="text" id="nome1" name="nome1"  size="13"   placeholder="digite o nome">
+                </label>
+                <label>
+                    <span>Idade1:</span>
+                    <input type="text" id="idade1" name="idade1"   size="13" placeholder="digite a idade">
+                </label>
+                <label>
+                    <span>Nome2:</span>
+                    <input type="text" id="nome2" name="nome2"  size="13"   placeholder="digite o nome">
+                </label>
+                <label>
+                    <span>Idade2:</span>
+                    <input type="text" id="idade2" name="idade2"   size="13" placeholder="digite a idade">
+                </label>
+               
+                <input type="button" onclick="exer03()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer11</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 11</h2>
+            <p>Fazer um programa para ler as duas notas que um aluno obteve no
+                primeiro e segundo semestres de uma disciplina anual. Em seguida,
+                mostrar a nota final que o aluno obteve (com uma casa decimal) no ano
+                juntamente com um texto explicativo. Caso a nota final do aluno seja
+                inferior a 60.00, mostrar a mensagem "REPROVADO".</p>
+                <form action="#"  name="frmexer11" id="frmexer11" method="post">
+                    <label>
+                        <span>Digite a primeira Nota :</span>
+                        <input type="text" id="nota1" name="nota1" onchange="decimaisnota1()"  size="13"  placeholder="Primeira nota">
+                    </label>
+                    <label>
+                        <span>Digite a Segunda Nota:</span>
+                        <input type="text" id="nota2" name="nota2" onchange="decimaisnota2()"  size="13"  placeholder="Segunda nota">
+                    </label>
+                   
+                    <input type="button" onclick="exer11()" value="Verificar">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer02</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 02</h2>
+            <p>Fazer um programa para ler as medidas da base e altura de um retângulo.
+                Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo,
+                com quatro casas decimais.</p>
+            <form action="#"  name="frmexer02" id="frmexer02" method="post">
+                <label>
+                    <span>Base:</span>
+                    <input type="text" id="base" name="base"  size="13" onchange="decimaisbase()"  placeholder="Base do retângulo">
+                </label>
+                <label>
+                    <span>Altura:</span>
+                    <input type="text" id="altura" name="altura"   onchange="decimaisaltura()" size="13" placeholder="Altura do retângulo">
+                </label>
+              
+               
+                <input type="button" onclick="exer02()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

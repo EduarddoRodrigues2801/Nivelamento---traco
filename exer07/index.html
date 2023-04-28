@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer07</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 07</h2>
+            <p>Fazer um programa para ler a distância total (em km) percorrida por um
+               carro, bem como o total de combustível gasto por este carro ao percorrer
+               tal distância. Seu programa deve mostrar o consumo médio do carro, com
+               três casas decimais.</p>
+                <form action="#"  name="frmexer07" id="frmexer07" method="post">
+                    <label>
+                        <span>Distância Percorrida:</span>
+                        <input type="text" id="distancia" name="distancia"   size="13"   placeholder="distância percorrida">
+                    </label>
+                    <label>
+                        <span>Combustível gasto:</span>:</span>
+                        <input type="text" id="combustivel" name="combustivel" onchange="decimaiscombustivel()"  size="13"   placeholder="Combustivel Gasto">
+                    </label>
+                  
+                   
+                    <input type="button" onclick="exer07()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

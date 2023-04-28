@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer25</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 25</h2>
+            <p>Receber valores numéricos para o dia e o mês de nascimento de uma
+                pessoa; Exibir o signo da pessoa de acordo com os seguintes critérios:
+                </p>
+                <form action="#"  name="25" id="frmexer25" method="post">
+                    <label>
+                        <span>Digite a data de Nascimento:</span>
+                        <input type="text" id="dia" name="x"  size="13"  placeholder="Dia do Aniversario">
+                    </label>
+                    <label>
+                        <span>Mês:</span>
+                       <select id ="mes">
+                        <option value="1">Janeiro</option>
+                        <option value="2">Fevereiro</option>
+                        <option value="3">Março</option>
+                        <option value="4">Abril</option>
+                        <option value="5">Maio</option>
+                        <option value="6">Junho</option>
+                        <option value="7">Julho</option>
+                        <option value="8">Agosto</option>
+                        <option value="9">Setembro</option>
+                        <option value="10">Outubro</option>
+                        <option value="11">Novembro</option>
+                        <option value="12">Dezembro</option>
+                       </select>
+                    </label>
+                    <input type="button" onclick="exer25()" value="Qual signo">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

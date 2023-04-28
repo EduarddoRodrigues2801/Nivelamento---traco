@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer10</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 10</h2>
+            <p>Fazer um programa para ler três números inteiros. Em seguida, mostrar
+                qual o menor dentre os três números lidos. Em caso de empate, mostrar
+                apenas uma vez.</p>
+                <form action="#"  name="frmexer10" id="frmexer10" method="post">
+                    <label>
+                        <span>Primeiro Valor:</span>
+                        <input type="text" id="primeiro" name="primeiro"   size="13"  placeholder="Primeiro valor">
+                    </label>
+                    <label>
+                        <span>Segundo Valor:</span>
+                        <input type="text" id="segundo" name="segundo"   size="13"  placeholder="Segundo valor">
+                    </label>
+                    <label>
+                        <span>Terceiro Valor:</span>
+                        <input type="text" id="terceiro" name="terceiro"   size="13"  placeholder="Terceiro valor">
+                    </label>
+                    <input type="button" onclick="exer10()" value="Verificar">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

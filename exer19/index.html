@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer19</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 19</h2>
+            <p>Uma empresa vai conceder um aumento percentual de salário aos seus
+                funcionários dependendo de quanto cada pessoa ganha, conforme tabela
+                ao lado. Fazer um programa para ler o salário de uma pessoa, daí mostrar
+                qual o novo salário dessa pessoa depois do aumento, quanto foi o aumento
+                e qual foi a porcentagem de aumento.</p>
+                <form action="#"  name="19" id="frmexer19" method="post">
+                    <label>
+                        <span>Digite o salário Atual :</span>
+                        <input type="text" id="salario" name="salario" onchange="decimaissalario()"  size="13"  placeholder="digite o salário atual">
+                    </label>
+                   
+                    <input type="button" onclick="exer19()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

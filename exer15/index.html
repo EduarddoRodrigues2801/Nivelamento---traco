@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer15</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 15</h2>
+            <p>Fazer um programa para ler a quantidade de glicose no sangue de uma
+                pessoa e depois mostrar na tela a classificação desta glicose de acordo
+                com a tabela de referência abaixo:</p>
+                <form action="#"  name="15" id="frmexer15" method="post">
+                    <label>
+                        <span>Digite a medida da Glicose :</span>
+                        <input type="text" id="glicose" name="glicose" onchange="decimaisglicose()" size="13"  placeholder="Medida da Glicose">
+                    </label>
+                  
+                   
+                    <input type="button" onclick="exer15()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

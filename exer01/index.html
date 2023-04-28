@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 1</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 01</h2>
+            <p>Fazer um programa para ler as medidas da largura e comprimento de um terreno retangular com uma casa decimal, bem como o valor do metro quadrado do terreno com duas casas decimais. Em seguida, o programa deve mostrar o valor da área do terreno, bem como o valor do preço do terreno, ambos com duas casas decimais.</p>
+            <form action="#"  name="frmexer01" id="frmexer01" method="post">
+                <label>
+                    <span>Largura:</span>
+                    <input type="text" id="largura" name="largura"  size="13" onchange="decimaislargura()"   placeholder="Largura do terreno">
+                </label>
+                <label>
+                    <span>Comprimento:</span>
+                    <input type="text" id="comprimento" name="comprimento" onchange="decimaiscomprimento()"  size="13" placeholder="Comprimento do terreno">
+                </label>
+                <label>
+                    <span>Valor metro quad.:</span>
+                    <input type="text" id="valor" name="valor" onchange="decimaisvalor()" placeholder="Valor metro quadrado" size="13">
+                </label>
+               
+                <input type="button" onclick="exer01()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer08</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 08</h2>
+            <p>Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
+                mostrar (imprimir os dados com quatro casas decimais):
+                a) a área do quadrado que tem lado A
+                b) a área do triângulo retângulo que base A e altura B
+                c) a área do trapézio que tem bases A e B, e altura C.</p>
+                <form action="#"  name="frmexer08" id="frmexer08" method="post">
+                    <label>
+                        <span>Digite a medida de A:</span>
+                        <input type="text" id="meda" name="meda"   size="13" onchange="decimaismeda()"  placeholder="Medida de A">
+                    </label>
+                    <label>
+                        <span>Digite a medida de B:</span>:</span>
+                        <input type="text" id="medb" name="medb" onchange="decimaismedb()"  size="13"   placeholder="Medida de B">
+                    </label>
+                    <label>
+                        <span>Digite a medida de C:</span>:</span>
+                        <input type="text" id="medc" name="medc" onchange="decimaismedc()"  size="13"   placeholder="Medida de C">
+                    </label>
+                   
+                    <input type="button" onclick="exer08()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

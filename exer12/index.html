@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exer12</title>
+    
+</head>
+<body>
+    <div id="principal">
+        <div id="exercicio">
+            <h1>Programa Jovens Tegranos</h1>
+            <h2>Exer 12</h2>
+            <p>Fazer um programa para ler os três coeficientes de uma equação do
+                segundo grau. Usando a fórmula de Bhaskara, calcular e mostrar os valores
+                das raízes x1 e x2 da equação com quatro casas decimais, conforme
+                exemplos. Se a equação não possuir raízes reais, mostrar uma mensagem.</p>
+                <form action="#"  name="frmexer12" id="frmexer12" method="post">
+                    <label>
+                        <span>coeficiente 1 :</span>
+                        <input type="text" id="cof1" name="cof1"  size="13"  placeholder="Coeficiente 1">
+                    </label>
+                    <label>
+                        <span>coeficiente 2:</span>
+                        <input type="text" id="cof2" name="cof2"   size="13"  placeholder="coeficiente 2">
+                    </label>
+                    <label>
+                        <span>Coeficiente 3:</span>
+                        <input type="text" id="cof3" name="cof3"   size="13"  placeholder="coeficiente 3">
+                    </label>
+                   
+                    <input type="button" onclick="exer12()" value="Calcular">
+                    <input type="button" onclick="novo()" value="Limpar">
+                    <div id="resultado"><p id="conteudoresultado"></p></div>
+                </form>
+        </div >
+      
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
